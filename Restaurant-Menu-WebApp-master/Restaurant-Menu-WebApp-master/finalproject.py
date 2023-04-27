@@ -1,15 +1,3 @@
-# This program is an implementation of a Restaurant Menu Web Application
-
-
-# Importing Flask class, and render templace function.
-
-# With Flask you don't have to explicitely write http response codes anymore,
-# the Flask framework takes care of it.
-
-# "request" is imported for getting input from forms
-
-# Importing CRUD operations "from sqlalchemy" and "from database_setup"
-
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
@@ -24,13 +12,6 @@ import json
 from flask import make_response
 import requests
 
-
-
-# Creating an instance of the Flask class with the name of the running
-# application as an argument.
-
-# Anytime we run an application in Python, a special variable called "__name__"
-# gets define for the application and all of the imports it uses.
 
 app = Flask(__name__)
 
